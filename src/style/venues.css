@@ -1,0 +1,345 @@
+/* ***************************VENUES******************************** */
+
+.main-products{
+    margin-top: 0%;
+  }
+  
+  
+  .img{
+    height: 60vh;
+    width: 100vw;
+  } 
+  
+  @media only screen and (max-width: 750px){
+    .img{
+      width: 100vw;
+      height: 50vh;
+    }   
+  }
+  
+  /* @media only screen and (max-width: 950px){
+    .left{
+      padding: 40px 15% 30px 15%;
+    }
+  } */
+  
+  .left{
+    padding: 40px 7% 30px 7%;
+  }
+  
+  .p{
+    color: rgb(109, 104, 104);
+    font-size: 13px;
+  }
+  
+  .space{
+    height: 2%;
+  }
+  
+  /* Filter */
+  .filters{
+    margin-left: 10px;
+  }
+  
+  /* online filter styling */
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(109, 104, 104);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #7D1935;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  
+  /* Rating */
+  .rating-text{
+    margin-top: 10px;
+    color: rgb(109, 104, 104);;
+    float: left;
+  }
+  
+  /* Rating online styling */
+  .rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+  }
+  .rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+  }
+  .rate:not(:checked) > label {
+    float:right;
+    width:0.7em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+  }
+  .rate:not(:checked) > label:before {
+    content: '★ ';
+  }
+  .rate > input:checked ~ label {
+    color: #ffc700;    
+  }
+  .rate:not(:checked) > label:hover,
+  .rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+  }
+  .rate > input:checked + label:hover,
+  .rate > input:checked + label:hover ~ label,
+  .rate > input:checked ~ label:hover,
+  .rate > input:checked ~ label:hover ~ label,
+  .rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+  }
+  
+  /* Right portion in products page */
+  
+  .right{
+    padding: 40px 4% 30px 4%;
+  }
+  
+  /* Cards */
+  .card-img{
+    height: 260px;
+    margin: 0;
+  }
+  
+  .card:hover {
+    height: 268px;
+    width: 238px;
+  }
+  
+  .card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0;
+    width: 230px;
+    transition: width 0.4s, height 0.4s;
+  }
+  
+  .card-width{
+    margin: 13px 5px !important;
+  }
+  
+  @media only screen and (max-width: 1200px){
+  
+    .card{
+      height: 200px;
+      width: 182px;
+      margin: 85px 5px;
+    }
+  
+    .card:hover {
+      height: 208px;
+      width: 188px;
+    }
+  }
+  
+  @media only screen and (max-width: 576px){
+  
+    .right{
+      margin: auto;
+      padding: 0% 20%;
+    }
+  
+    .card{
+      height: 280px;
+      width: 260px;
+      margin: 90px 5px;
+    }
+    
+    .card:hover {
+      height: 288px;
+      width: 268px;
+    }
+  
+    .search{
+      margin: auto;
+      padding: 0% 25%;
+    }
+  }
+  
+  
+  /* search dropdown */
+  .dropbtn {
+    background-color: #7D1935;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px !important;
+    width: 250px;
+    margin-bottom: 15px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    opacity: 0.8;
+    z-index: 1;
+    animation: growDown 500ms ease-in-out forwards;
+    transform-origin: top center;
+  }
+  @keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+  }
+  
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #7D1935; color: white;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #630923 !important;
+  }
+  
+  
+  .search{
+    text-align: center;
+    margin: auto !important;
+    outline: #7D1935 !important;
+  }
+  
+  .fa-search{
+    margin-right: 5%;
+  }
+  
+  /* Radio button */
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #7D1935;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+  
