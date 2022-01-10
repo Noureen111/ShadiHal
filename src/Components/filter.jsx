@@ -1,11 +1,25 @@
 import React from "react";
 
-function Filter(props) {
+function Filter() {
     return (
-        <label class="container">{props.labelValue}
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-        </label>
+        <div>
+            <label className="container filterContainer">Rating
+                <input type="checkbox" defaultChecked="checked" />
+                <span className="checkmark" />
+            </label>
+            <label className="container filterContainer">Max Capacity
+                <input type="checkbox" />
+                <span className="checkmark" />
+            </label>
+            <label className="container filterContainer">Area
+                <input type="checkbox" />
+                <span className="checkmark" />
+            </label>
+            <label className="container filterContainer">Venue Type
+                <input type="checkbox"  />
+                <span className="checkmark" />
+            </label>
+        </div>
     );
 }
 

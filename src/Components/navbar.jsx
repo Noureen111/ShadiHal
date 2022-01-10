@@ -30,7 +30,7 @@ function Navbar(){
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Home</a>
+                  <Link to="/" className="nav-link">Home</Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">About</a>
@@ -46,9 +46,7 @@ function Navbar(){
                   <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                     <Link to="/productsPage" className="dropdown-item" >Venues</Link>
                     <a className="dropdown-item" href="#">Caterers</a>
-                    {/* <a className="dropdown-item" href="#">Makeup Artist</a> */}
                     <a className="dropdown-item" href="#">Rent a Car</a>
-                    {/* <a className="dropdown-item" href="#">Event Management</a> */}
                     <a className="dropdown-item" href="#">Photography</a>
                   </div>
                 </li>

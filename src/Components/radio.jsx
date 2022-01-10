@@ -3,19 +3,19 @@ import React from "react";
 function Radio() {
     return (
         <div>
-            <label className="container">One
+            <label className="container radioContainer">One
                 <input type="radio" defaultChecked="checked" name="radio" />
                 <span className="checkmark" />
             </label>
-            <label className="container">Two
+            <label className="container radioContainer">Two
                 <input type="radio" name="radio" />
                 <span className="checkmark" />
             </label>
-            <label className="container">Three
+            <label className="container radioContainer">Three
                 <input type="radio" name="radio" />
                 <span className="checkmark" />
             </label>
-            <label className="container">Four
+            <label className="container radioContainer">Four
                 <input type="radio" name="radio" />
                 <span className="checkmark" />
             </label>
