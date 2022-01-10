@@ -261,7 +261,9 @@
   z-index: 1;
   animation: growDown 500ms ease-in-out forwards;
   transform-origin: top center;
+  text-decoration: none !important;
 }
+
 @keyframes growDown {
   0% {
       transform: scaleY(0)
@@ -359,4 +361,28 @@
 	height: 8px;
 	border-radius: 50%;
 	background: white;
+}
+
+
+/* *************************************Venue Detail***************************** */
+.venueDetail{
+  margin: 8% auto 10% auto;
+  padding: 3% 10%;
+}
+
+/* div{
+  border: 1px solid black;
+} */
+
+.rDetail{
+  padding: 5% 5% 5% 3%;
+}
+
+.lDetail{
+  padding: 5% 0% 5% 5%;
+}
+
+.detailImg{
+  width: 30rem;
+  height: 28rem;
 }

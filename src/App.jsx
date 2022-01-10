@@ -1,4 +1,3 @@
-// import './App.css';
 import Navbar from "./Components/navbar.jsx";
 import Home from "./Components/home.jsx";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
@@ -13,6 +12,7 @@ function App() {
       <Rout />
     </Router>
   
+  <div style={{height: '100px'}}></div>
       <Footer />
     </div>
   );
