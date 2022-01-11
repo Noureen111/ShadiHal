@@ -117,7 +117,7 @@
 /* Rating */
 .rating-text{
   margin-top: 10px;
-  color: rgb(109, 104, 104);;
+  color: rgb(109, 104, 104);
   float: left;
 }
 
@@ -166,13 +166,13 @@
 
 /* Cards */
 .card-img{
-  height: 260px;
+  height: 240px;
   margin: 0;
   width: 100%;
 }
 
 .card2:hover {
-  height: 390px;
+  height: 410px;
   width: 233px;
 }
 
@@ -194,7 +194,7 @@
 @media only screen and (max-width: 1200px){
 
   .card2{
-    height: 385px;
+    height: 420px;
     width: 182px;
     margin: 85px 5px;
   }
@@ -215,7 +215,7 @@
   }
 
   .card2{
-    height: 385px;
+    height: 394px;
     width: 260px;
     margin: 90px 5px;
     margin: auto !important;
@@ -366,16 +366,13 @@
 
 /* *************************************Venue Detail***************************** */
 .venueDetail{
-  margin: 8% auto 10% auto;
-  padding: 3% 10%;
+  margin: 3% auto 5% auto;
+  padding: 3% 8%;
 }
 
-/* div{
-  border: 1px solid black;
-} */
-
 .rDetail{
-  padding: 5% 5% 5% 3%;
+  padding: 7%;
+  color: rgb(109, 104, 104);
 }
 
 .lDetail{
@@ -383,6 +380,129 @@
 }
 
 .detailImg{
-  width: 30rem;
-  height: 28rem;
+  width: 100%;
+  height: 100%;
+}
+
+.heartIcon{
+  font-size: 35px;
+  color: red;
+  float: right;
+  cursor: pointer;
+}
+
+.venueDetailImg{
+  width: 100vw;
+}
+
+.userIcon{
+  font-size: 28px;
+  color: #7D1935;
+  display: inline;
+}
+
+.ReviewHeading{
+  text-align: center;
+}
+
+.username{
+  margin-left: 6px;
+  margin-top: 4px;
+}
+
+.blDetail{
+  padding: 5%;
+  color: rgb(109, 104, 104);
+}
+
+.title{
+  padding: 0% 3%;
+}
+
+/* div{
+  border: 1px solid black;
+} */
+
+.checkedStars {
+  color: orange;
+}
+
+.stars{
+  margin-right: 0;
+}
+
+.comment{
+  padding: 0% 6%;
+}
+
+/* Customizing Scrollbar */
+.commentSection{
+  height: 600px;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* Comment form */
+.commentButton{
+  background-color: #7D1935 !important;
+  float: right !important;
+}
+
+.selectButton{
+  background-color: #7D1935 !important;
+}
+
+.commentButton:hover{
+  background-color: #630923 !important;
+}
+
+.hide{
+  display: none;
+}
+
+.email{
+  border: none !important;
+  outline: none;
+  width: 100%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.drop{
+  background-color: white !important;
+  color: rgb(110, 102, 102);
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  display: block !important;
+  width: 100%;
+  text-align: left;
+  border-color: rgb(110, 102, 102) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+Link{
+  text-decoration: none !important;
 }
