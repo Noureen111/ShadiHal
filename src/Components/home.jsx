@@ -6,7 +6,7 @@ import '../App.css';
 
 function Home() {
     return (
-        <div>
+        <div classList="m">
             <Slider />
             <Packages />
             <div className="container">

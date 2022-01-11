@@ -4,6 +4,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../App.css';
 import Card from './card';
+import s1 from '../images/s1.jpg'
+import s2 from '../images/s2.jpg'
+import s3 from '../images/s3.jpg'
+import s4 from '../images/s4.jpg'
+import s5 from '../images/s5.jpg'
+import s6 from '../images/s6.jpg'
+import s7 from '../images/s7.jpg'
+import s8 from '../images/s8.jpg'
 
 function Glider() {
 
@@ -72,14 +80,14 @@ function Glider() {
         </div>
         <Slider {...settings}>
 
-          <Card src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg" />
-          <Card src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg" />
-          <Card src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg" />
-          <Card src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg" />
-          <Card src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg" />
-          <Card src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg" />
-          <Card src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg" />
-          <Card src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg" />
+          <Card src={s1} />
+          <Card src={s2} />
+          <Card src={s3} />
+          <Card src={s4} />
+          <Card src={s5} />
+          <Card src={s6} />
+          <Card src={s7} />
+          <Card src={s8} />
       
         </Slider>
         <div style={{ height: 50 }}></div>

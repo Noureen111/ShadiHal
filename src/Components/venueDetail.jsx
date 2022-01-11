@@ -1,10 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import '../style/venues.css';
+import '../style/venuesCaterers.css';
 import venueDetailTop from '../images/venueDetailTop.jpg';
 import Comment from "./comment";
 import CommentForm from "./commentForm";
-import {useLocation} from 'react-router-dom';
 
 
 function VenueDetail(props) {

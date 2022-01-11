@@ -7,7 +7,7 @@
 /* For slider and navbar */
 
 .carousel{
-  width: 100vw;
+  width: 100vw !important;
 }
 
 .carousel-item {
@@ -17,6 +17,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  width: 100vw;
 }
 
 .carousel-caption {

@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import '../style/venues.css';
+import '../style/venuesCaterers.css';
 import Rating from "./rating";
 import Filter from "./filter";
 import Dropdown from './dropdown';
 import Radio from "./radio";
 import axios from 'axios';
-import VenueCardList from "./venueCardList";
 import Card2 from './card2';
 
 function ProductsPage() {

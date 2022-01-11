@@ -45,9 +45,9 @@ function Navbar(){
                   </a>
                   <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                     <Link to="/productsPage" className="dropdown-item" >Venues</Link>
-                    <a className="dropdown-item" href="#">Caterers</a>
-                    <a className="dropdown-item" href="#">Rent a Car</a>
-                    <a className="dropdown-item" href="#">Photography</a>
+                    <Link to="/catererPage" className="dropdown-item">Caterers</Link>
+                    {/* <a className="dropdown-item" href="#">Rent a Car</a> */}
+                    {/* <a className="dropdown-item" href="#">Photography</a> */}
                   </div>
                 </li>
                 <li className="nav-item">

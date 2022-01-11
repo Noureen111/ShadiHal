@@ -6,7 +6,7 @@ import "../App.css";
 
 function Slider() {
     return (
-
+        <div className="n">
         <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
             <ol className="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to={0} className="active" />
@@ -53,6 +53,7 @@ function Slider() {
                 <span className="carousel-control-next-icon" aria-hidden="true" />
                 <span className="sr-only">Next</span>
             </a>
+        </div>
         </div>
     );
 
